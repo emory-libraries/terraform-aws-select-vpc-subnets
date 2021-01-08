@@ -5,3 +5,7 @@ output "vpc_cidr_block" {
 output "vpc_subnet_arns" {
    value =  [for s in data.aws_subnet.selected : s.arn ]
 }
+
+output "vpc_random_subnet" {
+  value = data.aws_subnet.random
+}
