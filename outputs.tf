@@ -11,5 +11,5 @@ output "vpc_subnet_ids" {
 }
 
 output "vpc_random_subnet" {
-  value = data.aws_subnet.random
+  value = random_shuffle.random_subnet.result.0
 }
