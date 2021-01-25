@@ -1,6 +1,6 @@
 variable "vpc_id" {
   type = string
-  description = "VPC that will be used by terraform, this VPC is called via data only, terraform will not attempt to manage the existence of the VPC"
+  description = "VPC that will be used by terraform, this VPC is called via data module, terraform will not attempt to manage the existence of the VPC"
 }
 
 variable "subnet_tags" {
